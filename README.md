@@ -29,15 +29,15 @@ Because MQTTHub expose socket.io client via localhost...
 2. In **JQuery** section of your plugin, just use this code :
 
 ```js
-    // Create socket on port 5005
-    var socket = io.connect('http://localhost:5005');
-    socket.on('connect', function () {
-        //socket.emit('publish', {topic:"ESP-01", payload:"?"});
-        socket.on('mqtt', function (msg) {
-            var s = String.fromCharCode.apply(null, new Uint8Array(msg.payload));
-            $('#temp').text(jQuery.parseJSON(s).temperature + "°C");
-            $('#humi').text(jQuery.parseJSON(s).humidity + "%");
-        });
-        socket.emit('subscribe', {topic: '/ESP-01/dht'});
+// Create socket on port 5005
+var socket = io.connect('http://localhost:5005');
+socket.on('connect', function () {
+    //socket.emit('publish', {topic:"ESP-01", payload:"?"});
+    socket.on('mqtt', function (msg) {
+        var s = String.fromCharCode.apply(null, new Uint8Array(msg.payload));
+        $('#temp').text(jQuery.parseJSON(s).temperature + "°C");
+        $('#humi').text(jQuery.parseJSON(s).humidity + "%");
     });
+    socket.emit('subscribe', {topic: '/ESP-01/dht'});
+});
 ```
