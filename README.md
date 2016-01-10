@@ -19,15 +19,16 @@ This plugin gives you easy and instantly access to **MQTT** with **S.A.R.A.H.** 
 
 1. In **HTML** section (portlet.ejs file) of your plugin add this "ejs" script :
 
-'''
+```
 <% script ('http://localhost:5005/socket.io/socket.io.js'); %>
-'''
+```
+
 Because MQTTHub expose socket.io client via localhost...
 
 
 2. In **JQuery** section of your plugin, just use this code :
 
-'''jquery
+```jquery
     // Create socket on port 5005
     var socket = io.connect('http://localhost:5005');
     socket.on('connect', function () {
@@ -39,4 +40,4 @@ Because MQTTHub expose socket.io client via localhost...
         });
         socket.emit('subscribe', {topic: '/ESP-01/dht'});
     });
-'''
+```
