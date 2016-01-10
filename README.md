@@ -1,6 +1,10 @@
-#![] MQTTHub
+#MQTTHub
+
+***
 
 ### Use real-time MQTT with S.A.R.A.H.
+
+***
 
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h), an Home Automation project built 
 on top of:
