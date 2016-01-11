@@ -16,13 +16,13 @@ Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** usi
 <a name="example"></a>
 ## Example
 
-In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
+In your plugin **HTML** section `\plugins\YOURPLUGIN\portlet.ejs`, add this "ejs" script :
 ```js
 <% script ('http://localhost:5005/socket.io/socket.io.js'); %>
 ```
 > Because MQTTHub expose socket.io client via localhost...
 
-In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
+In your plugin **JQuery** section `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
 ```js
 // Create socket on port 5005
 var socket = io.connect('http://localhost:5005');
@@ -40,19 +40,19 @@ socket.on('connect', function () {
 
 Elsewhere, in **JQUERY** or **NodeJS** sections...
 
-MQTT publishing :
 
 ```js
+// Publish to MQTT
 socket.emit('publish', {topic:"your_topic", payload:"your_msg"});
 ```
 
-MQTT subscribing :
 ```js
+// Subscribe to MQTT
 socket.emit('subscribe', {topic: 'your_topic'});
 ```
 
-MQTT unsubscribing :
 ```js
+// Unsubscribe to MQTT
 socket.emit('unsubscribe', {topic: 'your_unsubscribe_topic'});
 ```
 ***
@@ -60,4 +60,4 @@ socket.emit('unsubscribe', {topic: 'your_unsubscribe_topic'});
 <a name="install"></a>
 ## Installation
 
-Use inline S.A.R.A.H. 's MarketPlace or download from here and copy files into `SARAH/plugin/MQTTHub` directory.
+Use S.A.R.A.H. online MarketPlace or download files from here and then, copy them into `SARAH / plugins / MQTT Hub` directory.
