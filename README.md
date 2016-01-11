@@ -1,23 +1,23 @@
-#![](../master/www/images/mqtthub.png){:height="36px" width="36px"}.MQTTHub
+#![](../master/www/images/mqtthub.png) {:height="36px" width="36px"} MQTTHub
 
-***
 ### Use MQTT protocol in real-time with S.A.R.A.H.
-***
-This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h)
-***
+
+This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation Project
+
 ## Description
 This plugin gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using **socket.io**
 ***
 
 ## Example
 
-In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
+#### In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
 ```js
 <% script ('http://localhost:5005/socket.io/socket.io.js'); %>
 ```
 > Because MQTTHub expose socket.io client via localhost...
+<br/>
 
-In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
+#### In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
 ```js
 // Create socket on port 5005
 var socket = io.connect('http://localhost:5005');
