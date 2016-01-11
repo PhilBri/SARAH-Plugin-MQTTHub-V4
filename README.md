@@ -1,4 +1,4 @@
-<img src="../master/www/images/mqtthub.png"> MQTTHub
+# <img src="../master/www/images/mqtthub.png" width="30px" height="30px"/> MQTTHub
 
 ***
 ### Use MQTT protocol in real-time with S.A.R.A.H.
