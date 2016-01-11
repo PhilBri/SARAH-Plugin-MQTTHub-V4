@@ -1,14 +1,19 @@
-# <img src="../master/www/images/mqtthub.png" width="30px" height="30px"/> MQTTHub
+# <img src="../master/www/images/mqtthub.png" width="40px" height="40px"/> MQTTHub
 
-***
 ### Use MQTT protocol in real-time with S.A.R.A.H.
 ***
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
+* [Description](#description)
+* [Example](#example)
+* [Installation](#install)
+
 ***
+<a name="description"></a>
 ## Description
-This plugin gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using **socket.io**
+Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using **socket.io**
 ***
 
+<a name="example"></a>
 ## Example
 
 In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
@@ -51,3 +56,8 @@ MQTT unsubscribing :
 socket.emit('unsubscribe', {topic: 'your_unsubscribe_topic'});
 ```
 ***
+
+<a name="install"></a>
+## Installation
+
+Use inline S.A.R.A.H. 's MarketPlace or download from here and copy files into `SARAH/plugin/MQTTHub` directory.
