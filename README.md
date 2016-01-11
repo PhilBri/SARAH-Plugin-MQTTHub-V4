@@ -1,30 +1,23 @@
-#MQTTHub
+#![](../master/www/images/mqtthub.png){:height="36px" width="36px"}.MQTTHub
 
 ***
-
-### Use MQTT in real-time with S.A.R.A.H.
-
+### Use MQTT protocol in real-time with S.A.R.A.H.
 ***
-
-This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h), an Home Automation project built 
-on top of:
-* C# (Kinect) client for Voice, Gesture, Face, QRCode recognition. 
-* NodeJS (ExpressJS) server for Internet of Things communication
-
+This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h)
 ***
 ## Description
-This plugin gives you easy and instantly access to **MQTT** with **S.A.R.A.H.** using **socket.io**
+This plugin gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using **socket.io**
 ***
 
-## Usage
+## Example
 
-- In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
+In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
 ```js
 <% script ('http://localhost:5005/socket.io/socket.io.js'); %>
 ```
 > Because MQTTHub expose socket.io client via localhost...
 
-- In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
+In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
 ```js
 // Create socket on port 5005
 var socket = io.connect('http://localhost:5005');
@@ -40,7 +33,8 @@ socket.on('connect', function () {
 });
 ```
 
-- Elsewhere, in **JQUERY** or **NodeJS** sections...
+Elsewhere, in **JQUERY** or **NodeJS** sections...
+
 MQTT publishing :
 
 ```js
@@ -49,11 +43,11 @@ socket.emit('publish', {topic:"your_topic", payload:"your_msg"});
 
 MQTT subscribing :
 ```js
-socket.emit('subscribe', {topic: 'you_topic'});
+socket.emit('subscribe', {topic: 'your_topic'});
 ```
 
 MQTT unsubscribing :
 ```js
-socket.emit('unsubscribe', {topic: 'you_unsubscribe_topic'});
+socket.emit('unsubscribe', {topic: 'your_unsubscribe_topic'});
 ```
 ***
