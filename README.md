@@ -1,4 +1,4 @@
-#![](../master/www/images/mqtthub.png =30x30) MQTTHub
+<img src="../master/www/images/mqtthub.png"> MQTTHub
 
 ***
 ### Use MQTT protocol in real-time with S.A.R.A.H.
