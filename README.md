@@ -18,16 +18,13 @@ This plugin gives you easy and instantly access to **MQTT** with **S.A.R.A.H.** 
 
 ## Usage
 
-In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
-
-```html
+- In **HTML** section `\plugins\YOURPLUGIN\portlet.ejs` of your plugin, add this "ejs" script :
+```js
 <% script ('http://localhost:5005/socket.io/socket.io.js'); %>
 ```
 > Because MQTTHub expose socket.io client via localhost...
 
-
-In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
-
+- In **JQuery** section of your plugin `\plugins\YOURPLUGIN\www\portlet.js`, just use this code :
 ```js
 // Create socket on port 5005
 var socket = io.connect('http://localhost:5005');
@@ -43,8 +40,7 @@ socket.on('connect', function () {
 });
 ```
 
-Elsewhere, in **JQUERY** or **NodeJS** sections...
-
+- Elsewhere, in **JQUERY** or **NodeJS** sections...
 MQTT publishing :
 
 ```js
