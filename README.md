@@ -51,13 +51,13 @@ socket.once('connect', function () {
 });
 ```
 
-> MQTTHub expose [Socket.IO] client through localhost connection on port ***5005***
+> Expose [Socket.IO](http://socket.io/) client through localhost connection on port ***5005***
 
 > msg.topic is `String`.
 
 > msg.payload is `ArrayBuffer`.
 
-> Use `connect.once' ('connect', function () {});` to prevent multiples (re) connections fron same clients when server restart... 
+> Use `connect.once' ('connect', function () {});` to prevent multiples (re) connections from same clients when server restart... 
 
 ***
 
@@ -67,6 +67,9 @@ socket.once('connect', function () {
 For more documentation, thanks to refer to those of the modules used in this plugin :
 
 - [NQTT.JS](https://github.com/mqttjs/MQTT.js)
+- [Socket.IO](http://socket.io/)
+
+***
 
 <a name="install"></a>
 ## Installation
