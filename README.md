@@ -20,7 +20,7 @@ Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** usi
 <a name="example"></a>
 ## Example
 
-In **JQuery** section `..\plugins\your_plugin_path\www\portlet.js`, just use the code below :
+In **JQuery** section `..\plugins\your_plugin\www\portlet.js`, just use the code below :
 
 ```js
 // Create socket on port 5005
