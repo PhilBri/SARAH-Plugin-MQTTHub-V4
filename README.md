@@ -78,5 +78,5 @@ For more documentation, thanks to refer to those of the modules used in this plu
 <a name="install"></a>
 ## Installation
 
-Use S.A.R.A.H. online MarketPlace or download files from here and then, copy them into `..\SARAH\plugins\MQTT Hub` directory.
+Use S.A.R.A.H. online MarketPlace or download files from here and then, copy them into `..\SARAH\plugins\MQTTHub` directory.
 
