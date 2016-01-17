@@ -55,13 +55,13 @@ socket.once('connect', function () {
 
 ***Comments:***
 
-> ***MQTTHub*** expose [Socket.IO](http://socket.io/) client through **localhost** connection on port **5005**
+> **MQTTHub:** expose [Socket.IO](http://socket.io/) client through **localhost** connection on port **5005**
 
-> ***msg.topic*** is `String`.
+> **msg.topic:** Is `String`.
 
-> ***msg.payload*** is `ArrayBuffer`.
+> **msg.payload:** is `ArrayBuffer`.
 
-> ***Use***  `connect.once('connect', function () {});` to prevent multiples (re) connections from same clients when server restart... 
+> **Use:**  `connect.once('connect', function () {});` to prevent multiples (re) connections from same clients when server restart... 
 
 ***
 
