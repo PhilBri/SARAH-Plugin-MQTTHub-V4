@@ -17,7 +17,8 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
 
-This module is designed to be used in your own **S.A.R.A.H.** plugin. Only few code lines are required for building instant **MQTT** protocol requests...
+This module is designed to be used in your own **S.A.R.A.H.** plugin. Only a few lines of code are needed to build instant query using the **MQTT** protocol ...
+
 
 ***
 <a name="example"></a>
