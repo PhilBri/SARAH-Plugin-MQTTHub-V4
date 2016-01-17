@@ -20,7 +20,7 @@ Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** usi
 <a name="example"></a>
 ## Example
 
-In **JQuery** section `..\plugins\YOURPLUGIN\www\portlet.js`, just use the code below :
+In **JQuery** section `..\plugins\your_plugin_path\www\portlet.js`, just use the code below :
 
 ```js
 // Create socket on port 5005
@@ -78,5 +78,5 @@ For more documentation, thanks to refer to those of the modules used in this plu
 <a name="install"></a>
 ## Installation
 
-Use S.A.R.A.H. online MarketPlace or download files from here and then, copy them into `..\SARAH\plugins\MQTTHub` directory.
+Use S.A.R.A.H. online [MarketPlace](http://52.30.118.12:8080/home) or download files from here and then, copy them into `..\SARAH\plugins\MQTTHub` directory.
 
