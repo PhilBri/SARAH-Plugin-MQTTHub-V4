@@ -8,13 +8,12 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 * [Example](#example)
 * [Docs](#docs)
 * [Installation](#install)
+* [Important notes](#important)
 
 ***
 <a name="description"></a>
 ## Description
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
-
-***Warning:*** This plugin was designed for **S.A.R.A.H** v4 only !...
 
 ***
 <a name="example"></a>
@@ -79,4 +78,17 @@ For more documentation, thanks to refer to those of the modules used in this plu
 ## Installation
 
 Use S.A.R.A.H. online [MarketPlace](http://52.30.118.12:8080/home) or download files from here and then, copy them into `..\SARAH\plugins\MQTTHub` directory.
+
+***
+
+<a name="important"></a>
+## Important notes
+
+***Unseeing the portlet:***
+
+- Deactivate this plugin in the sarah's Marketplace, MQTTHub **still work** even in this case... (For a complète deactivation, uninstall it !)
+
+- ***Compatible version:*** 
+
+- This plugin was designed for **S.A.R.A.H** v4 only !...
 
