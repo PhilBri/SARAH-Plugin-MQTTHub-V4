@@ -86,9 +86,9 @@ Use S.A.R.A.H. online [MarketPlace](http://52.30.118.12:8080/home) or download f
 
 **To not display the portlet:**
 
-- Deactivate this plugin in the sarah's Marketplace, MQTTHub **still work** even in this case... (For a complète deactivation, uninstall it !)
+- Disable the plugin using `store` from S.A.R.A.H.'s portal , MQTTHub **still work** even in this case... (For a complete disabling delete it !)
 
-**Compatible version:** 
+**Compatible versions:** 
 
 - This plugin was designed for **S.A.R.A.H** v4 only !...
 
