@@ -84,11 +84,11 @@ Use S.A.R.A.H. online [MarketPlace](http://52.30.118.12:8080/home) or download f
 <a name="important"></a>
 ## Important notes
 
-***Unseeing the portlet:***
+**To not display the portlet:**
 
 - Deactivate this plugin in the sarah's Marketplace, MQTTHub **still work** even in this case... (For a complète deactivation, uninstall it !)
 
-- ***Compatible version:*** 
+**Compatible version:** 
 
 - This plugin was designed for **S.A.R.A.H** v4 only !...
 
