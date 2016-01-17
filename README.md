@@ -1,6 +1,7 @@
 # <img src="../master/www/images/mqtthub.png" width="40px" height="40px"/> MQTTHub
 
-### Use MQTT protocol in real-time with S.A.R.A.H.
+### MQTT protocol in real-time for S.A.R.A.H.
+
 ***
 
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
@@ -13,7 +14,10 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 ***
 <a name="description"></a>
 ## Description
+
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
+
+This module is designed to be used in your own **S.A.R.A.H.** plugin. Only few code lines are necessary for building instant **MQTT** protocol requests...
 
 ***
 <a name="example"></a>
@@ -86,7 +90,7 @@ Use S.A.R.A.H. online [MarketPlace](http://52.30.118.12:8080/home) or download f
 
 **To not display the portlet:**
 
-- Disable the plugin using `store` from S.A.R.A.H.'s portal , MQTTHub **still work** even in this case... (For a complete disabling delete it !)
+- Disable the plugin using `Store` from **S.A.R.A.H.**'s portal , **MQTTHub still work** even in this case... (For a complete disabling delete it !)
 
 **Compatible versions:** 
 
