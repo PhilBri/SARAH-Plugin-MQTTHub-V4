@@ -1,6 +1,3 @@
-<a name="example"></a>
-## Example
-
 # <img src="../master/www/images/mqtthub.png" width="40px" height="40px"/> MQTTHub
 
 ### Use MQTT protocol in real-time with S.A.R.A.H.
@@ -9,6 +6,7 @@
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
 * [Description](#description)
 * [Example](#example)
+* [Docs](#docs)
 * [Installation](#install)
 
 ***
@@ -17,12 +15,8 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
 
 ***
-In **HTML** section of your plugin `..\plugins\Your_Plugin_Path\portlet.ejs`, add this "EJS" script :
-
-```js
-<% script ('http://localhost:5005/socket.io/socket.io.js'); %>
-```
-> MQTTHub expose [Socket.IO] client via ***localhost*** on port ***5005***
+<a name="example"></a>
+## Example
 
 In **JQuery** section `..\plugins\YOURPLUGIN\www\portlet.js`, just use the code below :
 
@@ -57,19 +51,22 @@ socket.once('connect', function () {
 });
 ```
 
+> MQTTHub expose [Socket.IO] client through localhost connection on port ***5005***
+
 > msg.topic is `String`.
 
 > msg.payload is `ArrayBuffer`.
 
 > Use `connect.once' ('connect', function () {});` to prevent multiples (re) connections fron same clients when server restart... 
 
-With **NodeJS**.
-
-AJAX callbacks.
-socket.io.client
-
-
 ***
+
+<a name="Docs"></a>
+## Docs
+
+For more documentation, thanks to refer to those of the modules used in this plugin :
+
+- [NQTT.JS](https://github.com/mqttjs/MQTT.js)
 
 <a name="install"></a>
 ## Installation

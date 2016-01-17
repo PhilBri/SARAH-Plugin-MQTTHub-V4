@@ -1,0 +1,42 @@
+@txtcolor : #6A5F4D;
+
+#MQTTHub {
+	border: none;
+	border-radius: 0px;
+
+	.portlet-header {
+		border: none;
+		border-bottom: 1px solid @txtcolor;
+		background: white;
+		color: @txtcolor;
+		text-align: center;
+		#logo {
+			position: absolute;
+			height: 22px;
+			top: 4px;
+			left: 4px;
+		} 
+	}
+	.portlet-body {
+		height: 90px;
+		.row {
+			margin: 0px;
+		}
+		.col-xs-6, #mqtt, #socket {
+			padding: 0px;
+			margin: 0px;
+			color: @txtcolor;
+			h4 {
+				margin: 0px;
+			}
+		}
+	}
+	.portlet-footer {
+		position: absolute;
+		top: 3px;
+		left: 134px;
+		padding: 0px;
+		height: 26px;
+		.btn { border: none; }
+	}
+}

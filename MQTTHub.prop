@@ -1,0 +1,12 @@
+{
+  "modules" : { 
+    "MQTTHub"  : {
+      "description": "MQTT Hub for SARAH",
+      "version": "V4.1",
+      "Host": "",
+      "User": "",
+      "Password": "",
+      "Port": ""
+    }
+  }
+}

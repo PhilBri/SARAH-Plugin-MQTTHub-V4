@@ -1,0 +1,45 @@
+#MQTTHub {
+  border: none;
+  border-radius: 0px;
+}
+#MQTTHub .portlet-header {
+  border: none;
+  border-bottom: 1px solid #6a5f4d;
+  background: white;
+  color: #6a5f4d;
+  text-align: center;
+}
+#MQTTHub .portlet-header #logo {
+  position: absolute;
+  height: 22px;
+  top: 4px;
+  left: 4px;
+}
+#MQTTHub .portlet-body {
+  height: 90px;
+}
+#MQTTHub .portlet-body .row {
+  margin: 0px;
+}
+#MQTTHub .portlet-body .col-xs-6,
+#MQTTHub .portlet-body #mqtt,
+#MQTTHub .portlet-body #socket {
+  padding: 0px;
+  margin: 0px;
+  color: #6a5f4d;
+}
+#MQTTHub .portlet-body .col-xs-6 h4,
+#MQTTHub .portlet-body #mqtt h4,
+#MQTTHub .portlet-body #socket h4 {
+  margin: 0px;
+}
+#MQTTHub .portlet-footer {
+  position: absolute;
+  top: 3px;
+  left: 134px;
+  padding: 0px;
+  height: 26px;
+}
+#MQTTHub .portlet-footer .btn {
+  border: none;
+}
