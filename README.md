@@ -1,7 +1,10 @@
 # <img src="../master/www/images/mqtthub.png" width="40px" height="40px"/> MQTTHub
 
 ### Use MQTT protocol in real-time with S.A.R.A.H.
+
 ***
+
+![](../master/www/images/CaptureMqttHub.png) 
 
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
 * [Description](#description)
