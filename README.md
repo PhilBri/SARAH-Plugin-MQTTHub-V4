@@ -4,7 +4,7 @@
 
 ***
 
-![](../master/www/images/CaptureMqttHub.png) 
+![](../master/www/images/capture.png) 
 
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
 * [Description](#description)
