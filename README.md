@@ -12,10 +12,9 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 
 ***
 
-![](../master/www/images/capture.png) 
-
 <a name="description"></a>
 ## Description
+![](../master/www/images/capture.png) 
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
 
 ***
