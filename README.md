@@ -1,7 +1,6 @@
 # <img src="../master/www/images/mqtthub.png" width="40px" height="40px"/> MQTTHub
 
-### MQTT protocol in real-time for S.A.R.A.H.
-
+### Use MQTT protocol in real-time with S.A.R.A.H.
 ***
 
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
@@ -9,22 +8,17 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 * [Example](#example)
 * [Docs](#docs)
 * [Installation](#install)
-* [Important notes](#important)
 
 ***
 <a name="description"></a>
 ## Description
-
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
-
-This module is designed to be used in your own **S.A.R.A.H.** plugin. Only a few lines of code are needed to build instant query using the **MQTT** protocol ...
-
 
 ***
 <a name="example"></a>
 ## Example
 
-In **JQuery** section `..\plugins\your_plugin\www\portlet.js`, just use the code below :
+In your own plugin **JQuery**'s section, - `..\plugins\YOURPLUGIN\www\portlet.js` - just use the code below :
 
 ```js
 // Create socket on port 5005
@@ -33,14 +27,14 @@ var socket = io.connect('http://localhost:5005');
 // Connection process
 // i.e : msg.payload = {"temperature":"19,5","Humidity":"55"} and msg.topic = {"subscribed_topic"}
 
-socket.once('connect', function () {
+socket.on('connect', function () {
 
     socket.on('mqtt', function (msg) {
 
-    	// Converting returned ArrayBuffer Object ( to String() )
+    	// Convert returned ArrayBuffer Object to string.
         var s = String.fromCharCode.apply(null, new Uint8Array(msg.payload));
 
-        // Display in html tags
+        // Display in html tags.
         $('topic').text(msg.topic);
         $('#temp').text(jQuery.parseJSON(s).temperature + "°C");
         $('#humi').text(jQuery.parseJSON(s).humidity + "%");
@@ -54,18 +48,17 @@ socket.once('connect', function () {
 
 	// Unsubscribe to MQTT topic.
 	socket.emit('unsubscribe', {topic: 'your_unsubscribe_topic'});
+
+    // Disconnect the broker
+    socket.emit('disconnect');
 });
 ```
 
-***Comments:***
+> MQTTHub expose [Socket.IO] client through localhost connection on port ***5005***
 
-> **MQTTHub:** expose [Socket.IO](http://socket.io/) client through **localhost** connection on port **5005**
+> msg.topic is `String`.
 
-> **msg.topic:** Is `String`.
-
-> **msg.payload:** is `ArrayBuffer`.
-
-> **Use:**  `connect.once('connect', function () {});` to prevent multiples (re) connections from same clients when server restart... 
+> msg.payload is `ArrayBuffer`.
 
 ***
 
@@ -74,26 +67,9 @@ socket.once('connect', function () {
 
 For more documentation, thanks to refer to those of the modules used in this plugin :
 
-- [MQTT.JS](https://github.com/mqttjs/MQTT.js)
-- [Socket.IO](http://socket.io/)
-
-***
+- [NQTT.JS](https://github.com/mqttjs/MQTT.js)
 
 <a name="install"></a>
 ## Installation
 
-Use S.A.R.A.H. online **Marketplace** or download files from here and then, copy them into `..\SARAH\plugins\MQTTHub` directory.
-
-***
-
-<a name="important"></a>
-## Important notes
-
-**To not display the portlet:**
-
-- Disable the plugin using `Store` from **S.A.R.A.H.**'s portal , **MQTTHub still work** even in this case... (For a complete disabling delete it !)
-
-**Compatible versions:** 
-
-- This plugin was designed for **S.A.R.A.H** v4 only !...
-
+Use S.A.R.A.H. online MarketPlace or download files from here and then, copy them into `..\SARAH\plugins\MQTT Hub` directory.
