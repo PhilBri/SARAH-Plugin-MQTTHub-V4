@@ -4,8 +4,6 @@
 
 ***
 
-![](../master/www/images/capture.png) 
-
 This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-r-a-h) an Home Automation project.
 * [Description](#description)
 * [Example](#example)
@@ -13,11 +11,15 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 * [Installation](#install)
 
 ***
+
+![](../master/www/images/capture.png) 
+
 <a name="description"></a>
 ## Description
 Gives you easy and instantly access to **MQTT** Protocol with **S.A.R.A.H.** using [Socket.IO](http://socket.io).
 
 ***
+
 <a name="example"></a>
 ## Example
 
